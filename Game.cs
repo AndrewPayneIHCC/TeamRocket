@@ -13,11 +13,16 @@ namespace NotJeopardy
 {
     public partial class Game : Form
     {
+        public static string user;
         public static string highName;
         public static int highScore;
         public static char DELIM = ',';
         public static Random rand = new Random();
         public static List<int> categoryList = new List<int>();
+        public static List<string> Categories = new List<string> { "Presidents", 
+            "Sports", "Miscellaneous", "States", "Capitals", "Historical Events",
+            "National Icons", "National Parks", "Government", "National Landmarks", 
+            "American Authors", "American Music", "Inventors", "Alex Trebek", "Famous Movies"};
         public static List<Question> cat0List = new List<Question>();
         public static List<Question> cat1List = new List<Question>();
         public static List<Question> cat2List = new List<Question>();
@@ -41,7 +46,7 @@ namespace NotJeopardy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Start ad = new Start();
+            UserName ad = new UserName();
             ad.ShowDialog();
         }
 

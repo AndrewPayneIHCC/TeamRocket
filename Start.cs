@@ -25,13 +25,13 @@ namespace NotJeopardy
         private void button8_Click(object sender, EventArgs e)
         {
             Start ad = new Start();
-            ad.ShowDialog();
+            ad.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Display ad = new Display();
-            ad.ShowDialog();
+            ad.Show();
         }
 
         private void Start_Load(object sender, EventArgs e)
