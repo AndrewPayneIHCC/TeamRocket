@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using TeamRock;
 
 namespace NotJeopardy
 {
@@ -156,6 +157,11 @@ namespace NotJeopardy
             }
             hSreader.Close();
             hSFile.Close();
+        }
+
+        private void btnWeb_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
