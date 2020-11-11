@@ -41,22 +41,20 @@
             // 
             // lblScore
             // 
-            this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.White;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.Location = new System.Drawing.Point(64, 112);
+            this.lblScore.Location = new System.Drawing.Point(64, 104);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(0, 20);
+            this.lblScore.Size = new System.Drawing.Size(120, 24);
             this.lblScore.TabIndex = 0;
             // 
             // lblHScore
             // 
-            this.lblHScore.AutoSize = true;
             this.lblHScore.BackColor = System.Drawing.Color.White;
             this.lblHScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHScore.Location = new System.Drawing.Point(64, 152);
+            this.lblHScore.Location = new System.Drawing.Point(64, 144);
             this.lblHScore.Name = "lblHScore";
-            this.lblHScore.Size = new System.Drawing.Size(0, 20);
+            this.lblHScore.Size = new System.Drawing.Size(120, 24);
             this.lblHScore.TabIndex = 2;
             // 
             // button8
@@ -83,7 +81,7 @@
             // 
             // lblScoreNum
             // 
-            this.lblScoreNum.Location = new System.Drawing.Point(192, 114);
+            this.lblScoreNum.Location = new System.Drawing.Point(224, 112);
             this.lblScoreNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblScoreNum.Name = "lblScoreNum";
             this.lblScoreNum.Size = new System.Drawing.Size(67, 15);
@@ -91,7 +89,7 @@
             // 
             // lblHighNum
             // 
-            this.lblHighNum.Location = new System.Drawing.Point(187, 151);
+            this.lblHighNum.Location = new System.Drawing.Point(224, 152);
             this.lblHighNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHighNum.Name = "lblHighNum";
             this.lblHighNum.Size = new System.Drawing.Size(67, 15);
@@ -136,7 +134,6 @@
             this.Text = "Result";
             this.Load += new System.EventHandler(this.Result_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
