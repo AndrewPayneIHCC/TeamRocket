@@ -38,7 +38,14 @@ namespace NotJeopardy
                     MessageBox.Show("Correct! This questions' points have been added to your score.");
                     Game.score += pointValue;
                 }
-                else MessageBox.Show("Incorrect! No points have been added to your score.");
+                else
+                {
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    label3.Visible = false;
+                    MessageBox.Show("Incorrect! No points have been added to your score.");
+                    System.Threading.Thread.Sleep(2000);
+                }
             }
             if (chooseRight == 2)
             {
@@ -47,7 +54,14 @@ namespace NotJeopardy
                     MessageBox.Show("Correct! This questions' points have been added to your score.");
                     Game.score += pointValue;
                 }
-                else MessageBox.Show("Incorrect! No points have been added to your score.");
+                else
+                {
+                    lblDisplay.Visible = false;
+                    label2.Visible = false;
+                    label3.Visible = false;
+                    MessageBox.Show("Incorrect! No points have been added to your score.");
+                    System.Threading.Thread.Sleep(2000);
+                }
             }
             if (chooseRight == 3)
             {
@@ -56,7 +70,14 @@ namespace NotJeopardy
                     MessageBox.Show("Correct! This questions' points have been added to your score.");
                     Game.score += pointValue;
                 }
-                else MessageBox.Show("Incorrect! No points have been added to your score.");
+                else
+                {
+                    label1.Visible = false;
+                    lblDisplay.Visible = false;
+                    label3.Visible = false;
+                    MessageBox.Show("Incorrect! No points have been added to your score.");
+                    System.Threading.Thread.Sleep(2000);
+                }
             }
             if (chooseRight == 4)
             {
@@ -65,7 +86,14 @@ namespace NotJeopardy
                     MessageBox.Show("Correct! This questions' points have been added to your score.");
                     Game.score += pointValue;
                 }
-                else MessageBox.Show("Incorrect! No points have been added to your score.");
+                else
+                {
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    lblDisplay.Visible = false;
+                    MessageBox.Show("Incorrect! No points have been added to your score.");
+                    System.Threading.Thread.Sleep(2000);
+                }
             }
             if (questionNumber == 3)
             {
@@ -236,6 +264,11 @@ namespace NotJeopardy
                     lblDisplay.Visible = false;
                 }
                 System.Threading.Thread.Sleep(5000);
+                if (questionNumber == 4)
+                {
+                    Result result = new Result();
+                    result.Show();
+                }
                 this.Close();
             }
         }
