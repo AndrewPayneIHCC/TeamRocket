@@ -108,6 +108,7 @@
             this.Controls.Add(this.txtYScore);
             this.Controls.Add(this.lblScore);
             this.Name = "Result";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Result";
             this.Load += new System.EventHandler(this.Result_Load);
             this.ResumeLayout(false);

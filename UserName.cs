@@ -31,9 +31,13 @@ namespace NotJeopardy
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Game.user = txtUserName.Text;
-            Start s = new Start();
-            s.Show();
+            if (txtUserName.Text.Trim().Length != 0)
+            {
+                Game.user = txtUserName.Text;
+                Start s = new Start();
+                s.Show();
+            }
+            else MessageBox.Show("You must enter a name");
         }
     }
 }

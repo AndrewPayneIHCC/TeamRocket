@@ -12,25 +12,27 @@ namespace NotJeopardy
 {
     public partial class Display : Form
     {
+        int pointValue, questionCategory, questionNumber, chooseRight;
         public Display()
         {
             InitializeComponent();
         }
 
+        public Display(int points, int category, int question)
+        {
+            questionNumber = question;
+            questionCategory = category;
+            pointValue = points;
+            InitializeComponent();
+        }
         private void button2_Click(object sender, EventArgs e)
         {
-            Start ad = new Start();
-            ad.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
+            
         }
 
         private void Display_Load(object sender, EventArgs e)
         {
-            int newCategory = Game.rand.Next(0, 15);
+            int newCategory = questionCategory;
             //label6.Text = Game.highName;
             //label7.Text = Game.highScore.ToString();
             if (newCategory == 0)
@@ -142,7 +144,7 @@ namespace NotJeopardy
         private void chooseLayout(Question newQ)
         {
             lblQuestions.Text = newQ.QText;
-            int chooseRight = Game.rand.Next(1, 5);
+            chooseRight = Game.rand.Next(1, 5);
             if (chooseRight == 1)
             {
                 lblDisplay.Text = newQ.Correct;
