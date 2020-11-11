@@ -19,7 +19,8 @@ namespace NotJeopardy
 
         private void Result_Load(object sender, EventArgs e)
         {
-
+            lblScoreNum.Text = Game.score.ToString();
+            lblHighNum.Text = Game.highScore.ToString();
         }
     }
 }

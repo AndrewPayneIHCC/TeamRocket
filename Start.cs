@@ -18,16 +18,6 @@ namespace NotJeopardy
             InitializeComponent();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Start ad = new Start();
-            ad.Show();
-        }
 
         private void Start_Load(object sender, EventArgs e)
         {
@@ -35,6 +25,8 @@ namespace NotJeopardy
             Game.roundCounter++;
             if (Game.roundCounter == 1)
             {
+
+                MessageBox.Show("Welcome to American Jeopardy! This is the first of 3 rounds");
                 button1.Text = "1";
                 button4.Text = "2";
                 button12.Text = "3";
@@ -67,6 +59,7 @@ namespace NotJeopardy
             }
             if (Game.roundCounter == 2)
             {
+                MessageBox.Show("Advancing to round 2");
                 button1.Text = "2";
                 button4.Text = "4";
                 button12.Text = "6";
@@ -105,6 +98,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text),firstCat,questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -113,6 +110,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), firstCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -121,6 +122,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), firstCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -129,6 +134,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), secondCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -137,6 +146,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), secondCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -145,6 +158,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), secondCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -153,6 +170,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), thirdCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -161,6 +182,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), thirdCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -169,6 +194,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), thirdCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -177,6 +206,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), fourthCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -185,6 +218,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), fourthCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -193,6 +230,10 @@ namespace NotJeopardy
             questionCounter++;
             Display ad = new Display(Convert.ToInt32(button1.Text), fourthCat, questionCounter);
             ad.Show();
+            if (questionCounter == 3)
+            {
+                this.Close();
+            }
         }
     }
 }

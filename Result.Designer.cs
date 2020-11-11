@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Result));
             this.lblScore = new System.Windows.Forms.Label();
-            this.txtYScore = new System.Windows.Forms.TextBox();
             this.lblHScore = new System.Windows.Forms.Label();
-            this.txtHScore = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.lblScoreNum = new System.Windows.Forms.Label();
+            this.lblHighNum = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblScore
@@ -49,14 +49,6 @@
             this.lblScore.TabIndex = 0;
             this.lblScore.Text = "Your Score";
             // 
-            // txtYScore
-            // 
-            this.txtYScore.Location = new System.Drawing.Point(406, 280);
-            this.txtYScore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtYScore.Name = "txtYScore";
-            this.txtYScore.Size = new System.Drawing.Size(196, 26);
-            this.txtYScore.TabIndex = 1;
-            // 
             // lblHScore
             // 
             this.lblHScore.AutoSize = true;
@@ -68,14 +60,6 @@
             this.lblHScore.Size = new System.Drawing.Size(119, 25);
             this.lblHScore.TabIndex = 2;
             this.lblHScore.Text = "High Score";
-            // 
-            // txtHScore
-            // 
-            this.txtHScore.Location = new System.Drawing.Point(406, 349);
-            this.txtHScore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtHScore.Name = "txtHScore";
-            this.txtHScore.Size = new System.Drawing.Size(196, 26);
-            this.txtHScore.TabIndex = 3;
             // 
             // button8
             // 
@@ -101,17 +85,33 @@
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             // 
+            // lblScoreNum
+            // 
+            this.lblScoreNum.Location = new System.Drawing.Point(288, 176);
+            this.lblScoreNum.Name = "lblScoreNum";
+            this.lblScoreNum.Size = new System.Drawing.Size(100, 23);
+            this.lblScoreNum.TabIndex = 15;
+            // 
+            // lblHighNum
+            // 
+            this.lblHighNum.Location = new System.Drawing.Point(280, 232);
+            this.lblHighNum.Name = "lblHighNum";
+            this.lblHighNum.Size = new System.Drawing.Size(100, 23);
+            this.lblHighNum.TabIndex = 16;
+            // 
             // Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(884, 692);
+
+            this.ClientSize = new System.Drawing.Size(589, 450);
+            this.Controls.Add(this.lblHighNum);
+            this.Controls.Add(this.lblScoreNum);
+
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.txtHScore);
             this.Controls.Add(this.lblHScore);
-            this.Controls.Add(this.txtYScore);
             this.Controls.Add(this.lblScore);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Result";
@@ -126,10 +126,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblScore;
-        private System.Windows.Forms.TextBox txtYScore;
         private System.Windows.Forms.Label lblHScore;
-        private System.Windows.Forms.TextBox txtHScore;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblScoreNum;
+        private System.Windows.Forms.Label lblHighNum;
     }
 }

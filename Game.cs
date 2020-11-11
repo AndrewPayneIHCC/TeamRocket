@@ -14,6 +14,7 @@ namespace NotJeopardy
 {
     public partial class Game : Form
     {
+        public static int score = 0;
         public static int roundCounter = 0;
         public static string user;
         public static string highName;
