@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using TeamRock;
+using System.Diagnostics;
 
 namespace NotJeopardy
 {
@@ -57,7 +58,7 @@ namespace NotJeopardy
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void Game_Load(object sender, EventArgs e)
@@ -158,11 +159,7 @@ namespace NotJeopardy
             }
             hSreader.Close();
             hSFile.Close();
-        }
-
-        private void btnWeb_Click(object sender, EventArgs e)
-        {
-            
+            label3.Text = highName + " - " + highScore.ToString() + " pts";
         }
     }
 }
