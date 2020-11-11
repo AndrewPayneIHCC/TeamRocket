@@ -13,6 +13,7 @@ namespace NotJeopardy
 {
     public partial class Game : Form
     {
+        public static int roundCounter = 0;
         public static string user;
         public static string highName;
         public static int highScore;
@@ -47,7 +48,7 @@ namespace NotJeopardy
         private void button1_Click(object sender, EventArgs e)
         {
             UserName ad = new UserName();
-            ad.ShowDialog();
+            ad.Show();
         }
 
         
