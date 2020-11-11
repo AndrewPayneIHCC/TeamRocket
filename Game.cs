@@ -146,7 +146,8 @@ namespace NotJeopardy
                 inRecord = reader.ReadLine();
             }
             reader.Close();
-            inFile.Close(); FileStream hSFile = new FileStream("HSCORE.DAT", FileMode.OpenOrCreate, FileAccess.Read);
+            inFile.Close(); 
+            FileStream hSFile = new FileStream("HSCORE.DAT", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader hSreader = new StreamReader(hSFile);
             string hScore = hSreader.ReadLine();
             string[] scoreFields;

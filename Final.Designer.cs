@@ -36,19 +36,21 @@
             // 
             // LblFinalCat
             // 
-            this.LblFinalCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFinalCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFinalCat.Location = new System.Drawing.Point(232, 40);
             this.LblFinalCat.Name = "LblFinalCat";
             this.LblFinalCat.Size = new System.Drawing.Size(232, 96);
             this.LblFinalCat.TabIndex = 0;
+            this.LblFinalCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFinalPoint
             // 
-            this.lblFinalPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFinalPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFinalPoint.Location = new System.Drawing.Point(280, 152);
             this.lblFinalPoint.Name = "lblFinalPoint";
             this.lblFinalPoint.Size = new System.Drawing.Size(144, 72);
             this.lblFinalPoint.TabIndex = 1;
+            this.lblFinalPoint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 

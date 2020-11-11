@@ -12,7 +12,7 @@ namespace NotJeopardy
 { 
     public partial class Start : Form
     {
-        int firstCat, secondCat, thirdCat, fourthCat, points, questionCounter;
+        int firstCat, secondCat, thirdCat, fourthCat, questionCounter;
         public Start()
         {
             InitializeComponent();
@@ -108,7 +108,7 @@ namespace NotJeopardy
         {
             button4.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), firstCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button4.Text), firstCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -120,7 +120,7 @@ namespace NotJeopardy
         {
             button12.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), firstCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button12.Text), firstCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -132,7 +132,7 @@ namespace NotJeopardy
         {
             button2.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), secondCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button2.Text), secondCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -144,7 +144,7 @@ namespace NotJeopardy
         {
             button5.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), secondCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button5.Text), secondCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -156,7 +156,7 @@ namespace NotJeopardy
         {
             button11.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), secondCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button11.Text), secondCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -168,7 +168,7 @@ namespace NotJeopardy
         {
             button3.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), thirdCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button3.Text), thirdCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -180,7 +180,7 @@ namespace NotJeopardy
         {
             button6.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), thirdCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button6.Text), thirdCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -192,7 +192,7 @@ namespace NotJeopardy
         {
             button10.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), thirdCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button10.Text), thirdCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -204,7 +204,7 @@ namespace NotJeopardy
         {
             button14.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), fourthCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button14.Text), fourthCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -216,7 +216,7 @@ namespace NotJeopardy
         {
             button13.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), fourthCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button13.Text), fourthCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {
@@ -228,7 +228,7 @@ namespace NotJeopardy
         {
             button9.Visible = false;
             questionCounter++;
-            Display ad = new Display(Convert.ToInt32(button1.Text), fourthCat, questionCounter);
+            Display ad = new Display(Convert.ToInt32(button9.Text), fourthCat, questionCounter);
             ad.Show();
             if (questionCounter == 3)
             {

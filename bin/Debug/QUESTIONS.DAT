@@ -7,7 +7,7 @@
 3,1,Which animal is displayed on the California state flag?, A bear, A snake, A fox, An eagle
 3,2,What is the name of Colorado's mountain range?, Rocky Mountains, Blue Ridge Mountains, Smoky Mountains, Cascade Mountain Range
 3,3,Which of these Ivy League schools is located in Connecticut?, Yale, Harvard, Cornell, Brown
-3,2,Which of these states doe not border Kansas?, South Carolina, Colorado, Oklahoma, Nebraska
+3,2,Which of these states does not border Kansas?, South Carolina, Colorado, Oklahoma, Nebraska
 3,1,Which of these bays is located alongside Maryland?, Chesapeake Bay, Galveston Bay, Monterey Bay, Grizzley Bay
 3,3,Which of these nicknames belong to Mississippi?, The Magnolia State, The Copper State, The Ocean State, The Show-Me State
 5,1,When was America discovered?, 1492, 1615, 1490, 1500
@@ -23,20 +23,20 @@
 7,1,Which national park has a supervolcano?, Yellowstone, Yosemite, Grand Canyon, Redwood
 7,1,Which national park is named after a president?, Theodore Roosevelt, Yosemite, Badlands, Hot Springs
 8,2,In the case of a tied vote in the U.S. Senate the deciding vote is cast by who?, The Vice President, The Senate Majority Leader, Speaker of the House, The President
-8,3,A filibuster in the U.S. Senate can be used to prevent legislation from coming to a vote. Of the 100 U.S. senators how many votes are needed to end a filibuster?, 60, 55, 51, 75
+8,3,Of the 100 U.S. senators how many votes are needed to end a filibuster?, 60, 55, 51, 75
 8,2,How is the number of terms a president can serve determined?, 22nd Amendment of the Constitution, Article II of the US Constitution, Bill of Rights, 17th Amendment of the Constitution
 8,1,Which of the following rights is guaranteed by the First Amendment to the Constitution?, The right to free speech, the right to bear arms, the right to privacy, the right to a just trial
 8,1,How many members are in the US House of Representatives?, 435, 400, 500, 375
 8,3,How many votes are needed to impeach a president?, 2/3 of Senate, 3/4 of Senate, 300 in House of Representatives, 60 in Senate  
 10,2,What sullen poet wrote the Raven?, Edgar Allen Poe, Charles Dickens, Mark Twain, F. Scott Fitzgerald
-10,3,Known as "the father of American literature," what author's real name is Samuel Langhorne Clemens?, Mark Twain, Charles Dickens, Jack London, John Steinback
+10,3,What author's real name is Samuel Langhorne Clemens?, Mark Twain, Charles Dickens, Jack London, John Steinback
 10,1,Who wrote "The Great Gatsby"?, F. Scott Fitzgerald, Mark Twain, Raymond Chandler, Lewis Carrol
 10,3,What man wrote "The Old Man and the Sea"?, Earnest Hemingway, Arthur Conan Doyle, John Steinback, Mark Twain
-10,2,Which author wrote "The Grapes of Wrath" and also won the Pulitzer Prize and the Nobel Prize in Literature?, John Steinback, Ray Bradbury, Arthur Miller, Thomas Hardy
-10,1,Give the first name of this Famous American Author, ______ Dickens, Charles, Thomas, James, Paul
+10,2,Which author wrote "The Grapes of Wrath"?, John Steinback, Ray Bradbury, Arthur Miller, Thomas Hardy
+10,1,Give the first name of this Famous American Author ______ Dickens, Charles, Thomas, James, Paul
 12,3,Thomas Edison's Kinetograph was a pre-cursor to which piece of audio-visual equipment?, Video Camera, Wireless Microphone, Boom Microphone, Tripod
-12,2,Alexander Graham Bell patented the telephone in 1876. In which country of the United Kingdom was he born in 1847?, Scotland, Wales, England, Ireland
-12,1,Benjamin Franklin had an impressive CV that included titles like postmaster, politician, freemason, inventor, and diplomat. Which vision-improvement aid is he credited with inventing?, Bifocal Lenses, Contact Lenses, Progressive Lenses, Anti-glare Lenses
+12,2,In which country of the United Kingdom was Alexander Graham Bell born in 1847?, Scotland, Wales, England, Ireland
+12,1,Which vision-improvement aid is Benjamin Franklin credited with inventing?, Bifocal Lenses, Contact Lenses, Progressive Lenses, Anti-glare Lenses
 12,2,Issac Newton loved animals which invention for your pets did he patent?, Cat door, Dog whistle, Bark Collar, Kong toy
 12,1,When did Steve Jobs invent the Ipod?, 2001, 2000, 2002, 2003
 12,3,What year was Henry Ford born?, 1863, 1867, 1885, 1900
@@ -44,7 +44,7 @@
 14,2,What American writer/director starred in several iconic European-produced “Spaghetti Westerns”?, Clint Eastwood, John Wayne, Jack Elam, Gary Cooper
 14,1,In what 1976 thriller does Robert De Niro famously say “You talkin’ to me?”, Taxi Driver, The GodFather, Raging Bull, The Last Tycoon
 14,3,In Risky Business what song did Tom Cruise famously lip-sync to in his underwear?, Old Time Rock and Roll, Wait for me, The Real Love, Blind Love
-14,2,Jennifer Lawrence won a Best Actress Academy Award for what 2012 romantic comedy/drama?, Silver Linings Playbook, The Notebook, The Hunger Games, Passengers
+14,2,Jennifer Lawrence won an Academy Award for what 2012 romantic comedy/drama?, Silver Linings Playbook, The Notebook, The Hunger Games, Passengers
 14,1,What is the name of the movie that features Matt Damon as "Private Ryan"?, Saving Private Ryan, Hacksaw Ridge, Jarhead, Battleship  
 1,3,Who was the first president to throw a ceremonial first pitch, William Howard Taft, John F Kennedy, Abraham Lincoln, John Adams.
 1,3,Who was the first woman to win gold in the Olympics, Hélène de Pourtalès, Serena Williams, Simone Manuel, Allyson Felix
@@ -54,8 +54,8 @@
 1,2,What was the first Superbowl to use Roman numerals in its title, 3, 17, 1, 8
 2,1,18% of Americans put who in their will, Pets, Children, Cousins, Siblings
 2,2,What horrible thing happens every 45 seconds in America, House Fire, Tornado, Bear Attack, Murder
-2,3,What are Shovelhead, Knucklehead, and Panhead, Harley Davidson Bikes, Famous Criminals, Rare Snakes, Weird Screwdrivers
-2,2,The average person  swears how many times a day, 16, 7, 35, 87
+2,3,What are Shovelhead Knucklehead and Panhead, Harley Davidson Bikes, Famous Criminals, Rare Snakes, Weird Screwdrivers
+2,2,The average person swears how many times a day, 16, 7, 35, 87
 2,1,What is America's leading dairy state, Wisconson, Ohio, Texas, Florida
 2,3,Liscenes plates from which US state read "Native American", Oklahoma, Iowa, Omaha, North Carolina
 4,1,What is Iowa's Capital, Des Moines, Ames, Altoona, Oskaloosa
@@ -69,18 +69,18 @@
 6,1,Who made the first American flag, Betsy Ross, George Wahington, John Adams, Alexander Hamilton
 6,1,What is America's national bird, Bald Eagle, Woodpecker, Robin, Vulture
 6,3,Who is the model for Uncle Sam, Samuel Wilson, Abe Lincoln, George Washington, Sam Adams
-6,2,What nation was resposible for the crreation of the Statue of Liberty, France, USA, South America, Japan
+6,2,What nation was resposible for the creation of the Statue of Liberty, France, USA, South America, Japan
 9,1,Which US landmark completes the phrase: "Remeber ___ ____", The Alamo, Lincoln Memorial, Mount Rushmore, Crazy Horse Memorial
 9,1,What prison was home to Al Capone, Alcatraz, Rikers Island, Sing Sing, ADX Florence Facility
 9,3,This fort was where the first shots in the Civil War were fired, Fort Sumter, Fort Adams, Fort Baker, Fort Bowie
-9,3,What monument depicts a famous Civil Rights leader, Martin Luther King Jr. Memorial, Lincoln Monument, Rosa Parks Memorial, Wahington Monument
+9,3,What monument depicts a famous Civil Rights leader, Martin Luther King Jr. Memorial, Lincoln Monument, Jefferson Memorial, Wahington Monument
 9,2,Where does the President live, The White House, Their House, Virginia, Delaware
 9,2,Who was in charge of building Mount Rushmore, Gutzon Borglum, Harold Spitznagel, Lincoln Borglum, John Hasecoster
 11,3,In which state is the Rock and Roll Hall of Fame located, Ohio, Tennessee, Florida, New Hampshire
 11,1,Which Rock and Roll artist is associated with Graceland, Elvis Presley, Micheal Jackson, Eddie Van Halen, James Hetfield
 11,1,Which Pop artist is known as the "King of Pop", Micheal Jackson, Bruno Mars, Justin Timberlake, Elton John
 11,3,This famous country artist wrote the song "The Angry American", Toby Kieth, Garth Brooks, Reba McEntire, Blake Shelton
-11,2,This heavy metalist bit a live bat on stage thinking it was a prop, Ozzy Osborne, Alice Cooper, Freddie Mercury, John Arch
+11,2,This heavy metalist bit a live bat on stage thinking it was a prop, Ozzy Osborne, Alice Cooper, James Hetfield, John Arch
 11,2,Which Punk rock band released American Idiot, Green Day, The Offspring, Nirvana, Sum 41
 13,1,This famous show host had a iconic mustache for thirty years before shaving it off, Alex Trebek, Bob Parker, Pat Sajack, Drew Carey
 13,3,Alex Trebek was a producer on how many different shows, 4, 23, 7, 1
