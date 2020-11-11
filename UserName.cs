@@ -17,13 +17,6 @@ namespace NotJeopardy
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-
         private void UserName_Load(object sender, EventArgs e)
         {
 
@@ -36,6 +29,7 @@ namespace NotJeopardy
                 Game.user = txtUserName.Text;
                 Start s = new Start();
                 s.Show();
+                this.Close();
             }
             else MessageBox.Show("You must enter a name");
         }
