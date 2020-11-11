@@ -7,30 +7,94 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TeamRock;
 
 namespace NotJeopardy
 {
     public partial class Display : Form
     {
+        Timer t = new Timer();
+        int timerCount = 15;
+        int pointValue, questionCategory, questionNumber, chooseRight;
         public Display()
         {
             InitializeComponent();
         }
 
+        public Display(int points, int category, int question)
+        {
+            questionNumber = question;
+            questionCategory = category;
+            pointValue = points;
+            InitializeComponent();
+        }
         private void button2_Click(object sender, EventArgs e)
         {
-            Start ad = new Start();
-            ad.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
+            t.Stop();
+            if(chooseRight == 1)
+            {
+                if (radioButton1.Checked == true)
+                {
+                    MessageBox.Show("Correct! This questions' points have been added to your score.");
+                    Game.score += pointValue;
+                }
+                else MessageBox.Show("Incorrect! No points have been added to your score.");
+            }
+            if (chooseRight == 2)
+            {
+                if (radioButton2.Checked == true)
+                {
+                    MessageBox.Show("Correct! This questions' points have been added to your score.");
+                    Game.score += pointValue;
+                }
+                else MessageBox.Show("Incorrect! No points have been added to your score.");
+            }
+            if (chooseRight == 3)
+            {
+                if (radioButton3.Checked == true)
+                {
+                    MessageBox.Show("Correct! This questions' points have been added to your score.");
+                    Game.score += pointValue;
+                }
+                else MessageBox.Show("Incorrect! No points have been added to your score.");
+            }
+            if (chooseRight == 4)
+            {
+                if (radioButton4.Checked == true)
+                {
+                    MessageBox.Show("Correct! This questions' points have been added to your score.");
+                    Game.score += pointValue;
+                }
+                else MessageBox.Show("Incorrect! No points have been added to your score.");
+            }
+            if (questionNumber == 3)
+            {
+                if (Game.roundCounter > 1)
+                {
+                    MessageBox.Show("Advancing to the final round");
+                    Final final = new Final();
+                    final.Show();
+                }
+                else
+                {
+                    Start round2 = new Start();
+                    round2.Show();
+                }
+            }
+            if (questionNumber == 4)
+            {
+                Result result = new Result();
+                result.Show();
+            }
+            this.Close();
         }
 
         private void Display_Load(object sender, EventArgs e)
         {
-            int newCategory = Game.rand.Next(0, 15);
+            t.Interval = 1000;
+            t.Tick += new EventHandler(Timer_Tick);
+            t.Start();
+            int newCategory = questionCategory;
             //label6.Text = Game.highName;
             //label7.Text = Game.highScore.ToString();
             if (newCategory == 0)
@@ -139,10 +203,46 @@ namespace NotJeopardy
                 chooseLayout(newQ);
             }
         }
+
+        private void Timer_Tick(object sender, EventArgs eArgs)
+        {
+            timerCount--;
+            if (timerCount == 0)
+            {
+                t.Stop();
+                MessageBox.Show("Time has ran out. No points awarded for question");
+                if (chooseRight == 1)
+                {
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    label3.Visible = false;
+                }
+                if (chooseRight == 2)
+                {
+                    label2.Visible = false;
+                    label3.Visible = false;
+                    lblDisplay.Visible = false;
+                }
+                if (chooseRight == 3)
+                {
+                    label1.Visible = false;
+                    label3.Visible = false;
+                    lblDisplay.Visible = false;
+                }
+                if (chooseRight == 4)
+                {
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    lblDisplay.Visible = false;
+                }
+                System.Threading.Thread.Sleep(5000);
+                this.Close();
+            }
+        }
         private void chooseLayout(Question newQ)
         {
             lblQuestions.Text = newQ.QText;
-            int chooseRight = Game.rand.Next(1, 5);
+            chooseRight = Game.rand.Next(1, 5);
             if (chooseRight == 1)
             {
                 lblDisplay.Text = newQ.Correct;

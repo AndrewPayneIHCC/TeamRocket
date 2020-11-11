@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using TeamRock;
 
 namespace NotJeopardy
 {
     public partial class Game : Form
     {
+        public static int score = 0;
+        public static int roundCounter = 0;
         public static string user;
         public static string highName;
         public static int highScore;
@@ -47,7 +50,7 @@ namespace NotJeopardy
         private void button1_Click(object sender, EventArgs e)
         {
             UserName ad = new UserName();
-            ad.ShowDialog();
+            ad.Show();
         }
 
         
@@ -155,6 +158,11 @@ namespace NotJeopardy
             }
             hSreader.Close();
             hSFile.Close();
+        }
+
+        private void btnWeb_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
